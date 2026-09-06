@@ -8,49 +8,50 @@ public class Quiz {
         System.out.println("Antes de começar preciso fazer algumas verfificações");
 
         System.out.println("Seu nome é Lucas?");
-        String confirma = scanner.next();
+        String confirma = scanner.nextLine();
 
         if (confirma.equals("sim")){
             System.out.println("qual deles? digite o sobrenome");
-            String sobrenome = scanner.next();
+            String sobrenome = scanner.nextLine();
 
             if (sobrenome.toLowerCase().equals("coelho") || sobrenome.toLowerCase().equals("gonçalves")){
                 System.out.println("Vamos começar nossas perguntas! (dica: utlize / para datas, e não tem nem acento ou ç");
                 System.out.println("Qual é minha data de nascimento?");
-                String pergunta1 = scanner.next();
+                String pergunta1 = scanner.nextLine();
 
                 if (pergunta1.equals("16/07/2007")){
                     System.out.println("Qual é minha cor favorita?");
-                    String pergunta2 = scanner.next();
+                    String pergunta2 = scanner.nextLine();
 
                     if (pergunta2.toLowerCase().equals("rosa") || pergunta2.toLowerCase().equals("preto") || pergunta2.toLowerCase().equals("branco") || pergunta2.toLowerCase().equals("cinza")){
                         System.out.println("Quantos gatos eu tenho?");
                         int pergunta3 = scanner.nextInt();
+                        scanner.nextLine();
 
                         if (pergunta3 == 3){
                             System.out.println("Qual palavra que eu falo e te deixa bravo? (geralmente ocorre quando eu falei algo e vc não escutou)");
-                            String pergunta4 = scanner.next();
+                            String pergunta4 = scanner.nextLine();
 
                             if (pergunta4.toLowerCase().equals("deixa")){
                                 System.out.println("Qual é minha música favorita?");
                                 int pergunta5 = scanner.nextInt();
+                                scanner.nextLine();
 
                                 if (pergunta5 == 505){
                                     System.out.println("Qual alimento é a mesma cor da minha pele?");
-                                    String pergunta6 = scanner.next();
+                                    String pergunta6 = scanner.nextLine();
                                     System.out.println(pergunta6);
 
                                     if (pergunta6.toLowerCase().equals("pacoca") ){
                                         System.out.println("Qual pessoa da sala tem a voz que me irrita?");
-                                        String pergunta7 = scanner.next();
+                                        String pergunta7 = scanner.nextLine();
 
                                         if (pergunta7.toLowerCase().equals("thabata")){
                                             System.out.println("Quem era o monitor que tinha um 'crush' em mim?");
-                                            String pergunta8 = scanner.next();
+                                            String pergunta8 = scanner.nextLine();
 
                                             if (pergunta8.toLowerCase().equals("alan")){
                                                 System.out.println("Qual foi a série que eu te recomendei?");
-                                                scanner.nextLine();
                                                 String pergunta9 = scanner.nextLine();
 
                                                 if (pergunta9.toLowerCase().equals("the big bang theory")){
